@@ -176,7 +176,7 @@ jobs:
     runs-on: warp-ubuntu-latest-x64-4x
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           path: .
       - name: Build archive
@@ -203,7 +203,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           path: bindings_ffi/build
       - name: Build archive
